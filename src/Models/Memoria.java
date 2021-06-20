@@ -1,4 +1,4 @@
-//SpriteCache
+package src.Models;//SpriteCache
 import java.awt.Graphics;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsEnvironment;
@@ -26,8 +26,7 @@ public class Memoria extends SetMemoria implements ImageObserver{
 	
 	public BufferedImage Compatibilidad(int ancho,int alto, int transpariencia){
 		GraphicsConfiguration gc=GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getDefaultConfiguration();
-		BufferedImage compatible=gc.createCompatibleImage(ancho,alto,transpariencia);
-		return compatible;
+		return gc.createCompatibleImage(ancho,alto,transpariencia);
 	}
 	public BufferedImage getSprite(String nombre){
 		BufferedImage carga=(BufferedImage)getResource(nombre);

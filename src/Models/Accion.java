@@ -1,4 +1,6 @@
-//Actor Clase para agregar personajes al juego
+package src.Models;//Actor Clase para agregar personajes al juego
+import src.Interfaces.Inicio;
+
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.awt.Rectangle;
