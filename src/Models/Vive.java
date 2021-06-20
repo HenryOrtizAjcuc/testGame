@@ -139,8 +139,8 @@ public class Vive extends Canvas implements Inicio, KeyListener {
         g.setColor(Color.black);
         g.fillRect(0, 0, getWidth(), getHeight());
         for (int i = 0; i < actors.size(); i++) {
-            Accion m = (Accion) actors.get(i);
-            m.paint(g);
+            Accion accion = (Accion) actors.get(i);
+            accion.paint(g);
         }
         jugador.paint(g);
         paintEstado(g);
